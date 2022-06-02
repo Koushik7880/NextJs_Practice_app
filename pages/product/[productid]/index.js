@@ -2,7 +2,9 @@ import { useRouter } from 'next/router'
 
 function ProductDetail(){
     const router = useRouter()
-    const productId = router.query.productId 
+    const productId = router.query.productid 
+    console.log(router.query.productid )
+    console.log(router.query )
     return <h1>Details about product {productId} </h1>
 
 }
